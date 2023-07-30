@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/floating.css">
+</head>
+<body>
+    
+    <!-- Starting Navbar -->
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo"><a href="#">FotoGenie</a></div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="why_us.html">Why Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- <li><a href="#">Get Quote</a></li> -->
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    <!-- end of Navbar -->
+
+    <!-- start of services landing page -->
+
+    <div class="gallery-landing">
+        <h4>Gallery</h4>
+        <h1>FotoGenie Image Gallery</h1>
+        
+    </div>
+
+    <!-- start of the 3D gallery effect -->
+
+     <!-- Swiper -->
+
+<div class="body_s">
+    <div class="swiper_s mySwiper_s">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/service-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/service-3.jpg" />
+          </div>
+        </div>
+      
+      </div>
+    
+</div>
+  
+    <!-- end of the 3D gallery effect -->
+
+    <!-- main image gallery -->
+    <div class="image-gallery">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <div class="main-gallery">
+        <a href="images/dulha-1.jpeg">
+            <img src="images/dulha-1.jpeg" alt="">
+        </a>
+        <a href="images/dulha-2.jpg">
+            <img src="images/dulha-2.jpg" alt="">
+        </a>
+        <a href="images/dulha-3.jpg">
+            <img src="images/dulha-3.jpg" alt="">
+        </a>
+        <a href="images/dulha-4.jpg">
+            <img src="images/dulha-4.jpg" alt="">
+        </a>
+        <a href="images/dulha-6.jpg">
+            <img src="images/dulha-6.jpg" alt="">
+        </a>
+        <a href="images/dulha-7.jpg">
+            <img src="images/dulha-7.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- end of image gallery -->
+
+    <!-- start video gallery -->
+
+    <div class="image-gallery">
+        <h1>Video Gallery</h1>
+    </div>
+
+    <div class="video-gallery">
+
+        <div class="video-container">
+            <div class="video">
+                <video src="videos/video-7.mp4" muted></video>
+            </div>
+            <div class="video">
+                <video src="videos/video-2.mp4" muted></video>
+            </div>
+            <div class="video">
+                <video src="videos/video-3.mp4" muted></video>
+            </div>
+            <div class="video">
+                <video src="videos/video-4.mp4" muted></video>
+            </div>
+            <div class="video">
+                <video src="videos/video-5.mp4" muted></video>
+            </div>
+            <div class="video">
+                <video src="videos/video-6.mp4" muted></video>
+            </div>
+        </div>
+    
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="videos/video-1.mp4" muted autoplay controls></video>
+        </div>
+       
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.video-container video').forEach(vid => {
+
+            vid.onclick = () =>{
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-video span').onclick = () =>{
+            document.querySelector('.popup-video').style.display = 'none';
+        }
+    </script>
+
+    
+      
+
+    <!-- end of video gallery -->
+
+ 
+    <!-- start of the footer -->
+
+  <div class="footer">
+    <h1>Contact Us</h1>
+    <div class="sub-footer">
+        <div class="footer-item">
+          <h2>FotoGenie</h2>
+          <p> <i class="fa-solid fa-address-book"></i> Pottery Road, Park Circus, Kolkata- 700015</p>
+          <p> <i class="fa-solid fa-phone"></i> 9000090000</p>
+          <p> <i class="fa-solid fa-envelope"></i> fotogenie@dummy.com</p>
+        </div>
+
+        <div class="footer-item">
+          <h2>Quick Link</h2>
+          <a href="services.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Services</a>
+          <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Gallery</a>
+          <a href="about.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> About Us</a>
+        </div>
+
+        <div class="footer-item">
+          <h2>Social Media Contact</h2>
+          <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+    </div>
+   
+  </div>
+
+  <!-- end of the footer -->
+
+
+   <!-- floating button -->
+
+   <div class="action" onclick="actionToggle();">
+    <span>+</span>
+    <ul>
+        <li><i class="fa-brands fa-facebook-f"></i> Like on Facebook</li>
+        <li><i class="fa-brands fa-twitter"></i>Like on Twitter</li>
+        <li><i class="fa-brands fa-instagram"></i>Like on Instagram</li>
+        <li><i class="fa-brands fa-pinterest"></i>Like on Pinterest</li>
+        <li><i class="fa-brands fa-linkedin"></i>Like on Linkedin</li>
+
+    </ul>
+
+</div>
+
+<script>
+    function actionToggle(){
+        var action = document.querySelector('.action');
+        action.classList.toggle('active')
+    }
+</script>
+
+  <!-- end of the floating button -->
+
+    <script>
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+        }
+        cancelBtn.onclick =()=>{
+            menu.classList.remove("active");
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.main-gallery'));
+    </script>
+
+
+    
+    
+  <script>
+    var swiper = new Swiper(".mySwiper_s", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop : true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+ 
+    });
+  </script>
+
+ 
+</body>
+</html>
